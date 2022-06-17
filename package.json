@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "dev": "nodemon ./app.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "engines": {
+    "node": "16.14.0"
+  },
+  "name": "17-06-2022-weekend-asognment-bank-api",
+  "description": "SIMPLE EXPRESS BANK API",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Samer Taha",
+  "license": "ISC"
+}
