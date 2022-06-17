@@ -1,9 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const axios = require('axios');
 const cors = require('cors');
-const path = require('path');
-require('dotenv').config();
 const fs = require('fs');
 
 const app = express();
